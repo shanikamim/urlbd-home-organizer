@@ -1,0 +1,863 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>MIM's HOME ORGANIZER</title>
+
+	
+
+	<link href="https://fonts.googleapis.com/css?family=lato:400,700&display=swap"rel="stylesheet">
+
+	<link rel="stylesheet" href="assets/fonts/css/all.css">
+
+	<style>
+
+		*{
+
+			margin: 0;
+
+			padding: 0;
+
+			font-family: 'Lato', sans-serif;
+
+		}
+
+		#header{
+
+			position: sticky;
+
+			top: 0;
+
+			z-index: 1;
+
+		}
+
+		header{
+
+			
+
+			width: 100%;
+
+			height: 100px;
+
+			background-color: #f6f9f9;
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 999;
+
+		}
+
+		main{
+
+			
+
+			width: 80%;
+
+			margin: 0 auto;
+
+		}
+
+		.logo{
+
+			position: relative;
+
+			float: left;
+
+			width: 30%;
+
+		}
+
+		.logo img{
+
+			float: left;
+
+			/*height: 40px;*/
+
+			position: absolute;
+
+			margin-top: 30px;
+
+
+
+		}
+
+		
+
+		nav ul{
+
+			list-style: none;
+
+            float: right;
+
+		}
+
+	
+
+		nav ul li {
+
+        display: inline-block;
+
+		padding : 40px 22px;
+
+	}
+
+	nav ul li a{
+
+		text-decoration: none;
+
+		color: #2d3950;
+
+	}
+
+	.banner{
+
+		position: relative;
+
+		background-image: url('assets/images/banner.jpg');
+
+		width:100%;
+
+		height: 600px;
+
+		background-position: center;
+
+		background-repeat: no-repeat;
+
+		background-size: cover;
+
+		margin: 0 auto;
+
+
+
+	}
+
+	
+
+	
+
+	.banner h1{
+
+		position: absolute;
+
+		text-align: center;
+
+		margin-top: 15%;
+
+		font-size: 120px;
+
+		width: 100%;
+
+		color: #fff;
+
+		font-weight: bold;
+
+	}
+
+	 .border{
+
+		position: absolute;
+
+		width: 600px;
+
+		height: 2px;
+
+		background-color: #15A4FA;
+
+		margin-top:  27%;
+
+		margin-left: 27%;
+
+	}
+
+	.main-artical{
+
+		position: relative;
+
+		width: 600px;
+
+		margin: 0 auto;
+
+		min-height: 600px;
+
+	}
+
+	.main-artical h1{
+
+	position: absolute;
+
+	text-align: center;
+
+	margin-top: 20%;
+
+	font-size: 120px;
+
+	width: 100%;
+
+	color: #fff;
+
+	font-weight: bold;	
+
+	}
+
+	.main-artical .border{
+
+		position: absolute;
+
+		width: 600px;
+
+		border-top: 2px solid #15A4EA;
+
+		margin: 0 auto;
+
+		margin-top: 43%;
+
+	}
+
+	.main-artical p{
+
+		text-align: center;
+
+		color: #f5f5f5;
+
+		font-size: 20px;
+
+		font-weight: 400px;
+
+		padding: 30px 0 60px 0;
+
+
+
+	}
+
+	.main-artical a{
+
+		width: 180px;
+
+		position: relative;
+
+		bottom: 50%;
+
+		left: 35%;
+
+		transform: translate(-50%, 10%);
+
+		padding: 18px 30px;
+
+		font-size:16px;
+
+		background-color: transparent;
+
+		border: 1px solid #15A4FA;
+       
+		text-decoration: none;
+
+		transition: .4s all ease-in;
+
+		font-weight: 300.
+
+ 
+
+
+	}
+
+	.main-artical a:hover{
+
+		background-color: #15A4FA;
+
+	}
+
+	.icon a{
+
+		width: 28px;
+
+		font-size: 30px;
+
+		bottom: 6%;
+
+		position: absolute;
+
+		left: 47%;
+
+		color: #f5f5f5;
+
+		animation: myanimation 1s alternate 
+
+		infinite;
+
+	}
+
+	
+
+		@keyframes myanimation{
+
+			0%{
+
+				bottom: 6.1%;
+
+			}
+
+			50%{
+
+				bottom: 5.5%;
+
+			}
+
+			100%{
+
+				bottom: 5.25%;
+
+			}
+
+
+
+		}
+
+	.service{
+
+		position: relative;
+
+		width: 80%;
+
+		margin: 0 auto;
+
+		padding: 63px 0;
+
+	}
+
+	.feature{
+
+		position: relative;
+
+		margin-top: 60px;
+
+		width: calc(33.33% - 5%);
+
+		float: left;
+
+		margin-left: 5%;
+
+		text-align: center;
+        margin-bottom: 65px;
+
+
+	}
+.feature h1{
+	font-size: 22px;
+	line-height: 33px;
+	font-weight: 400;
+}
+	.feature p{
+		font-size: 15px;
+		line-height: 23px;
+		font-weight: 300;
+		margin-top: 8px;
+	}
+
+	
+
+	
+
+	/*.product .fas:hover{
+
+		background-color: #48baff;
+
+	}*/
+
+	.product{
+
+		position: relative;
+
+		width: 100%;
+
+		float: left;
+        padding-bottom: 20px;
+	}
+
+	.product .fas{
+
+		padding: 30px 35px;
+
+		font-size: 40px;
+
+		color: #fff;
+
+		transition: all .4s ease-in;
+
+		background-color: #5fc3ff;
+
+		margin-bottom: 20px;
+
+		cursor: pointer;
+
+	}
+
+	.feature h1{
+
+		font-size: 22px;
+
+		color: #2d3950;
+
+	}
+
+	
+
+	.feature p{
+
+		font-size: 15px;
+
+		padding: 20px 0;
+
+		color: #999;
+
+	}
+
+	.fa-paper-plane{
+
+		background-color: #5FC3FF;
+
+	}
+
+	.product .fas.fa-paper-plane:hover{
+
+		background-color: #48BAFF;
+
+	}
+
+	.bg-title{
+
+		width: 100%;
+
+		background-color: #f6f9f9;
+
+		position: relative;
+
+	}
+
+	.title{
+
+		width: 80%;
+
+		margin: 0 auto;
+
+		text-align: center;
+
+		font-size: 20px;
+
+		padding: 80px 0;
+
+	}
+
+	.title h1{
+
+		font-size: 40px;
+
+		color: #2d3950;
+
+		margin-bottom: 32px;
+
+	}
+
+	.title p{
+
+		color: #999;
+
+	}
+
+    .work-bg{
+    	width:100%;
+    	background-color: #ddd;
+    	height: auto;
+        clear: both;
+        overflow: hidden;
+    }
+    .work{
+    	width: 80%;
+    	margin: 0 auto;
+    	overflow: hidden;
+    }
+    .work h1{
+    	font-size: 41px;
+    	font-weight: 400;
+    	line-height: 61px;
+    	text-align: center;
+    	padding-top: 58px;
+    }
+    .work p{
+    	font-size: 15px;
+    	font-weight: 300;
+    	line-height: 28px;
+    	text-align: center;
+    	padding: 10px 0 70px 0;
+    }
+    .row{
+    	margin-left: -15px;
+    	margin-right: -15px;
+    }
+    .project{
+    	width: calc(33.33% - 30px);
+    	margin: 15px;
+    	height: auto;
+    	float: left;
+    	position: relative;
+    }
+    .images{
+    	display: block;
+    	width: 100%;
+    }
+    .overlay{
+    	position: absolute;
+    	contain: "";
+    	top: 0;
+    	left: 0;
+    	width: 0%;
+    	height: 100%;
+    	background-color: rgba(67, 158, 230, 0.9);
+    	overflow: hidden;
+    	transition: all .4s ease-in-out;
+    }
+    .project:hover .overlay{
+        width: 100%;
+    }
+    .link{
+    	top: 50%;
+    	left:50%;
+    	width: 100px;
+    	height: 50px;
+    	transform: translate(-50%, -50%);
+    	color: #fff;
+    	position: absolute;
+    }
+    
+.link ul li{
+	display: inline-block;
+}
+.link li a{
+	padding: 9px 12px;
+	border: 1px solid #fff;
+	margin-right: 4px;
+
+}
+.fa-search-plus, .fa-link{
+    color: #fff;
+} 
+.contact-bg{
+	width: 100%;
+	background-image: url('assets/images/contact bg.jpg');
+	background-position: center;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	background-color:rgba(47, 57, 76, .7);
+}
+.contacts{
+	position: relative;
+    content:" ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(47, 57, 76, .7);
+    overflow: hidden;
+}
+
+.contact{
+	width: 40%;
+	margin: 0 auto;
+
+}
+.contact h1{
+	font-size: 41px;
+	font-weight: 400;
+	line-height: 60px;
+	color: #fff;
+	padding-top: 40px;
+	text-align: center;
+
+}
+.contact p{
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 22px;
+	color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+input[type="text"], input[type="email"], textarea{
+	width: 100%;
+	padding: 15px;
+	background-color: transparent;
+	border:1px solid #76797f;
+	margin-top: 20px;
+	color: #76797f;
+}.send{
+	padding: 8px 40px;
+	background-color: transparent;
+	border: 1px solid #15a4fa;
+	float: right;
+	margin-right: -30px;
+	margin-top: 20px;
+	color: #ddd;
+	font-size: 16px;
+	font-weight: 300;
+	
+}
+input[type="checkbox"]{
+	margin-top: 28px;
+	font-size: 16px;
+	
+	font-weight: 300;
+}
+label{
+	color: #f5f5f5;
+}
+.footer{
+	width: 100%;
+	height: 90px;
+	background-color: #f6f9f9;
+}
+
+ .footer h1{
+	height: 12px;
+	font-width: 400;
+	color: #d4d6d6;
+	float: left;
+	display: inline-block;
+	padding-top: 37px;
+	padding-bottom: 37px;
+	padding-left: 46px;
+
+}
+.footer-icon{
+    	margin: 36px 200px 26px 1200px;
+    	width: 100px;
+    	height: 50px;
+    	background-color: #f5f5f5;
+    	position: absolute;
+
+    }
+    
+.footer-icon ul li{
+	display: inline-block;
+}
+.footer-icon li {
+	padding: 9px 12px;
+	margin-right: 4px;
+	background-color: #15a4fa;
+
+}
+
+
+</style>
+	</head>
+
+
+
+<body>
+
+	<section id="header">
+
+		<header>
+
+			<main>
+
+			<div class="logo">
+
+				<img src="assets/images/logo/logo.png" alt="Logo">
+
+			</div>
+
+			<nav>
+
+				<ul>
+
+					<li><a href="#">Home</a></li>
+
+					<li><a href="#">About</a></li>
+
+					<li><a href="#">Gallary</a></li>
+
+				</ul>
+
+			</nav>
+
+		</main>
+
+		</header>
+
+	</section>
+
+	<section>
+
+	<div class="banner">
+
+		<div class="main-artical">
+
+		<h1>MIM </h1>
+
+		<div class="border">
+
+			<p>organized
+                spaces that restore peace to your life.</p>
+
+			<a href="#">contact</a>
+
+		</div>
+
+	</div>
+
+	<div class="icon">
+
+		<a href="#"><i class="fa fa-angle-down"></i>
+
+
+			</a>
+
+		</div>
+
+		</div>
+
+	</div>
+
+</section>
+
+<section class="bg-title">
+
+	<div class="title">
+
+		<h1>Home Organizer URLBD</h1>
+
+		<p>Peace of mind begins with simplicity. Simplicity, efficiency, and elegance in your physical speace
+			whether at work or at home.</p>
+
+	</div>
+
+</section>
+
+<div class="service">
+
+	<div class="feature">
+
+		<div class="product">
+
+			<i class="fas fa-mobile-alt"></i>
+
+	</div>
+
+	<h1>Organized Home</h1>
+
+	<p>Would you like to find anything in your home in less than one minute?</p>
+	
+
+</div><div class="feature">
+
+		<div class="product">
+
+			<i class="fas fa-paper-plane"></i>
+
+	</div>
+
+	<h1>Organized Office</h1>
+
+	<p>We will create simple, organized
+			spaces that restore peace to your life</p>
+
+</div><div class="feature">
+
+		<div class="product">
+
+			<i class="fas fa-bullhorn"></i>
+
+	</div>
+
+	<h1>Organized spaces</h1>
+
+	<p>Peace of mind begins with simplicity. Simplicity, efficiency, and elegance in your physical speace
+		whether at work or at home</p>
+
+</div>
+</div>
+<section class="work-bg">
+
+	<div class="work">
+		<h1>Showing my latest work </h1>
+		<p> Contact me if you like my work</p>
+		<div class="row">
+		
+		<div class="project">
+		<img src="assets/images/img 1.png" alt="" class="images">
+		<div class="overlay">
+			<div class="link">
+				<ul>
+			<li><a href=""><i class="fa fa-search-plus"></i>
+
+</a></li>
+			<li><a href=""><i class="fa fa-link" ></i>
+
+</a></li></ul>
+</div>
+		</div>	
+		</div>
+		<div class="project">
+		<img src="assets/images/img 2.png" alt="" class="images">	
+		</div>
+		<div class="project">
+		<img src="assets/images/img 3.png" alt="" class="images">	
+		</div>
+		<div class="project">
+		<img src="assets/images/img 4.png" alt="" class="images">	
+		</div>
+		<div class="project">
+		<img src="assets/images/img 5.png" alt="" class="images">	
+		</div>
+		<div class="project">
+		<img src="assets/images/img 6.png" alt="" class="images">	
+		</div>
+        </div>
+	</div>
+</section>
+<section class="contact-bg">
+	<div class="contacts">
+<div class="contact">
+	<h1>Stay with us</h1>
+	<p>We ensure quailty & support</p>
+	<form action="">
+		<input type="text" placeholder="Full Name">
+		<input type="email" placeholder="Email Address">
+		<textarea name="" id="" cols="30" rows="10">Messages</textarea>
+		<input type="checkbox" name="Newsletter">
+		<label for="">Subscribe Newsletter</label>
+		
+		<input class="send" type="submit" value="send">
+	
+	</form>
+
+</div>
+</div>	
+</section>
+<section class="footer">
+	<h1>Copyritht 2023, MIM</h1>
+<div class="footer-icon">
+<ul>
+<li><a href=""><i class="fa fa-search-plus"></i>
+
+
+</a></li>
+			<li><a href=""><i class="fa fa-link" ></i>
+
+</a></li>			
+</ul>
+</div>
+</section>
+	
+
+</body>
+
+
+
+</html>
